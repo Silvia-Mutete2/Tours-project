@@ -1,11 +1,7 @@
 import React from 'react'
 
+ function Tour(){
+     return
 
-function Tours(){
-
-  return 
-   
-  
-}
-
-export default Tours
+ }
+ export default Tour
