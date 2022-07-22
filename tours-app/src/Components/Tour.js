@@ -11,6 +11,9 @@ import React from 'react'
                 <h3>{name}</h3>
                 <h4>${price}</h4>
               </div>
+              <p>
+                  <button>Read More</button>
+              </p>
     
      
             </div>
