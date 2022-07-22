@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <h1 style={{color: "blue"}} >Our Tours</h1>
-    <Tours/>
+    <Tours tours={tours}/>
   
   </>
 )
