@@ -1,6 +1,6 @@
 import React from 'react'
 
- function Tour(){
+ function Tour({id, name, info, image, price}){
     return (
         <div className='container'>
           <div className='tours'>
@@ -8,8 +8,8 @@ import React from 'react'
               <img src="" alt='tour' />
      
               <div className='txt'>
-                <h3>Kenya</h3>
-                <h4>$500</h4>
+                <h3>{name}</h3>
+                <h4>${price}</h4>
               </div>
     
      

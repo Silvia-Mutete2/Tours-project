@@ -9,7 +9,7 @@ function App() {
   function fetchData (){
     fetch("https://course-api.com/react-tours-project")
     .then(response => response.json())
-    .then (() => console.log(tours))
+    .then (toursData => setTours(toursData))
   }
   
   useEffect(() => {
