@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 
- function Tour({id, name,  image, price, }){
+ function Tour({id, name,  image, price,info }){
+    const [readmore, setReadmore] = useState(false)
     return (
         <div className='container'>
           <div className='tours'>
@@ -12,7 +13,10 @@ import React from 'react'
                 <h4>${price}</h4>
               </div>
               <p>
-                  <button>Read More</button>
+              {readmore ? info : `${info.substring(0, 200)}...`}
+           <button id='txtBtn' onClick={() => setReadmore(!readmore)}>
+             {readmore ? 'Show less' : 'Show more'}
+           </button>
               </p>
     
      
