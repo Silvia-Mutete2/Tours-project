@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from 'react'
+import Navbar  from './Components/Navbar';
 import Tours from './Components/Tours';
 
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+    <Navbar/>
     <h1 style={{color: "blue"}} >Our Tours</h1>
     <Tours tours={tours}/>
   

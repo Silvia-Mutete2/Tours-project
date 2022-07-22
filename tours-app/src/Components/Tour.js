@@ -1,11 +1,11 @@
 import React from 'react'
 
- function Tour({id, name, info, image, price}){
+ function Tour({id, name,  image, price, }){
     return (
         <div className='container'>
           <div className='tours'>
             <div className='tour'>
-              <img src="" alt='tour' />
+              <img src={image} alt='tour' />
      
               <div className='txt'>
                 <h3>{name}</h3>
