@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import './App.css';
 import Navbar  from './Components/Navbar';
 import Tours from './Components/Tours';
+import Loading from './Components/Loading';
 
 
 function App() {
