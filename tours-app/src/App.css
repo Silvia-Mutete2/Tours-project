@@ -73,3 +73,8 @@ h1{
   outline: none;
   color: rgb(172, 3, 3);
 }
+#loading{
+  font-weight: 800;
+  margin-top: 150px;
+  font-size: 50px;
+}
