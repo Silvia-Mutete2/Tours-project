@@ -53,3 +53,13 @@ h1{
   display: flex;
   padding: 15px 0;
 }
+.tour #txtBtn{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(112, 112, 248);
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px;
+  text-decoration: underline;
+}
