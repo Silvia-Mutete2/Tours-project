@@ -20,10 +20,11 @@ function App() {
 
   return (
     <>
+    <header>
     <Navbar/>
     <h1 style={{color: "blue"}} >Our Tours</h1>
     <Tours tours={tours}/>
-  
+    </header>
   </>
 )
 }

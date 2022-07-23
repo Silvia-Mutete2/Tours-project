@@ -21,3 +21,21 @@
 .active {
   color: white;
 }
+h1{
+  font-weight: 800;
+  margin: 20px 0;
+  font-size: 45px;
+  text-decoration: underline;
+  text-align: center;
+}
+.tour img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tour .txt{
+  display: flex;
+  padding: 15px 0;
+}

@@ -6,14 +6,14 @@ import React,{useState} from 'react'
         <div className='container'>
           <div className='tours'>
             <div className='tour'>
-              <img src={image} alt='tour' />
+              <img src={image}  alt='tour' />
      
               <div className='txt'>
                 <h3>{name}</h3>
                 <h4>${price}</h4>
               </div>
               <p>
-              {readmore ? info : `${info.substring(0, 200)}...`}
+              {readmore ? info : `${info.substring(0, 200)}....`}
            <button id='txtBtn' onClick={() => setReadmore(!readmore)}>
              {readmore ? 'Show less' : 'Show more'}
            </button>
