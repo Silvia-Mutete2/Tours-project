@@ -53,7 +53,7 @@ function App() {
     <>
     <header>
     <Navbar/>
-    <h1 style={{color: "blue"}} >Our Tours</h1>
+    <h1> Our Tours</h1>
     <Tours tours={tours} handleDeleteTour={handleDeleteTour}/>
     </header>
   </>

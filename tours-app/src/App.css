@@ -36,7 +36,7 @@
   align-items: center;
 }
 h1{
-  font-weight: 800;
+  font-weight: 700;
   margin: 20px 0;
   font-size: 45px;
   text-decoration: underline;
@@ -57,7 +57,7 @@ h1{
   background: transparent;
   border: none;
   outline: none;
-  color: rgb(112, 112, 248);
+  color: rgb(65, 65, 168);
   cursor: pointer;
   font-weight: bold;
   margin: 0 5px;
@@ -69,9 +69,9 @@ h1{
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid rgb(172, 3, 3);
+  border: 1px solid rgb(74, 62, 180);
   outline: none;
-  color: rgb(172, 3, 3);
+  color: rgb(17, 16, 16);
 }
 #loading{
   font-weight: 800;
@@ -86,8 +86,13 @@ h1{
   border: none;
   outline: none;
   font-size: 17px;
-  color: aliceblue;
+  color: rgb(228, 232, 236);
   cursor: pointer;
   z-index: 10;
   font-weight: bold;
+}
+h2{
+  font-weight: 800;
+  margin-top: 100px;
+  font-size: 50px;
 }
