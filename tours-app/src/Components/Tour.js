@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
- function Tour({id, name,  image, price,info }){
+ function Tour({id, name,  image, price,info,handleDeleteTour }){
     const [readmore, setReadmore] = useState(false)
     return (
         <div className='container'>
@@ -15,10 +15,10 @@ import React,{useState} from 'react'
               <p>
               {readmore ? info : `${info.substring(0, 200)}....`}
            <button id='txtBtn' onClick={() => setReadmore(!readmore)}>
-             {readmore ? 'Show less' : 'Show more'}
+             {!readmore ? 'Show more' : 'Show less'}
            </button>
               </p>
-    
+              <button id="deleteBtn" onClick={() => handleDeleteTour(id)}>Not Interested</button>
      
             </div>
           </div>
