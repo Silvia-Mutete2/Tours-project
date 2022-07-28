@@ -20,10 +20,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": " react-scripts start",
-    "server": "json-server --watch db.json -p 30004",
+    "server": "json-server --watch db.json --p 8000",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
   },
   "eslintConfig": {
     "extends": [
