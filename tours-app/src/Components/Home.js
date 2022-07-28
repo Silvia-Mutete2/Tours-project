@@ -10,7 +10,7 @@ function Home() {
   
 
   function fetchData (){
-    fetch("http://localhost:3000/tours")
+    fetch("http://localhost:3004/tours")
     .then(response => response.json())
     .then (toursData => setTours(toursData))
     setLoading(false)
