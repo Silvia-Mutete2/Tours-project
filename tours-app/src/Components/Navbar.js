@@ -1,31 +1,44 @@
 import React from "react";
-import logo from "../logo.png"
-
-
-function Navbar(){
-    return (
-        <nav className="navbar" >
-        <img src={logo} alt="city tours logo" />
-        <ul className="nav-links">
-          <li>
-            <a href="/home" className="nav-link">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="nav-link">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/" className="nav-link active">
-              Contacts
-            </a>
-          </li>
+import { Link } from "react-router-dom";
+import '../App.css'
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <div className="navbar-heading">
+        <h1>
+          <span>
+            ALIS-Tours
+          </span>
+        </h1>
+      </div>
+      <div className="navbar-links">
+        <ul>
+          <Link to="/">
+            {" "}
+            <li>Home</li>
+          </Link>
+          <Link to="/about">
+          {" "}
+          <li>About</li>
+        </Link>
+        
+          <Link to="/login">
+          {" "}
+          <li>Login</li>
+        </Link>
+          <Link to="/signup">
+          {" "}
+          <li>SignUp</li>
+        </Link>
+        <Link to="/comments">
+          {" "}
+          <li>Comments</li>
+        </Link>
         </ul>
-      </nav>
-    );
-    
-}
+      </div>
+      <button className="about-btn">LogOut</button>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

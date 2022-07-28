@@ -1,63 +1,28 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import './App.css';
-import Navbar  from './Components/Navbar';
-import Tours from './Components/Tours';
-import Loading from './Components/Loading';
-
+import  Navbar  from './Components/Navbar';
+import { Routes, Route } from "react-router-dom"
+import Home from './Components/Home';
+import Login from './Components/Login'
+import SignUp from './Components/SignUp'
+import About from './Components/About'
+import Comments from './Components/Comments'
 
 function App() {
-  const [tours, setTours] = useState([])
-  const [loading,setLoading] = useState(true)
-  
-
-  function fetchData (){
-    fetch("https://course-api.com/react-tours-project")
-    .then(response => response.json())
-    .then (toursData => setTours(toursData))
-    setLoading(false)
-  // .catch(error)
-  //   setLoading(false)
-  //   console.log(error)
-  }
-  
-  useEffect(() => {
-    fetchData()
-  }, [])
-
-  function handleDeleteTour(id){
-     const newTours = tours.filter((tour) =>tour.id !== id)
-     setTours(newTours)
-  }
-
-  if(loading){
-    return(
-      <div className="container">
-        <Loading />
-      </div>
-    )
-  }else if(!loading && tours.length === 0){
-    return(
-      <div className="container">
-        <h2>No Tours Left</h2>
-        <button className="refresh" onClick={()=>{
-          setLoading(true)
-          fetchData()}}>
-            Refresh
-            </button>
-      </div>
-    )
-  }
-
 
   return (
-    <>
-    <header>
+   <div className='App'>
     <Navbar/>
-    <h1> Our Tours</h1>
-    <Tours tours={tours} handleDeleteTour={handleDeleteTour}/>
-    </header>
-  </>
+    
+    <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/about" element={<About />}></Route>
+        <Route exact path="/login" element={<Login />}></Route>
+        <Route exact path="/signup" element={<SignUp />}></Route>
+        <Route exact path="/comments" element={<Comments />}></Route>
+      </Routes>
+    </div>
+    
 )
-}
+} 
 export default App;
-

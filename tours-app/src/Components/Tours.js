@@ -1,8 +1,8 @@
 import React from 'react'
-import Tour  from './Tour'
+import {Tour}  from './Tour'
 
 
-function Tours({tours}){
+function Tours({tours,handleDeleteTour}){
 
   return (
     <>
@@ -13,6 +13,7 @@ function Tours({tours}){
         name={tour.name}
         price={tour.price}
         info={tour.info}
+        handleDeleteTour={handleDeleteTour}
         id={tour.id}
       />
     ))}
