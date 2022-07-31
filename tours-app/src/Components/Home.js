@@ -8,6 +8,7 @@ function Home() {
   const [tours, setTours] = useState([])
   const [loading,setLoading] = useState(true)
   
+  
 
   function fetchData (){
     fetch("http://localhost:8000/tours")
@@ -28,8 +29,8 @@ function Home() {
     const newTours = tours.filter((tour) => tour.id !== id)
     setTours(newTours)
   }
-
-
+  
+    
   if(loading){
     return(
       <div className="container">
@@ -50,6 +51,7 @@ function Home() {
   }
   return (
     <div>
+      
             <SearchBar />
             <Tours tours={tours} handleDeleteTour={handleDeleteTour}/>
         </div>
